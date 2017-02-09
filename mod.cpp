@@ -1,0 +1,12 @@
+name = "11e Régiment de Dragons Portés";
+picture = "logo_11rdp_ca.paa";
+actionName = "GitHub";
+action = "https://github.com/11rdp/modpack";
+description = "Modpack Dragons";
+logo = "logo_11rdp_ca.paa";
+logoOver = "logo_11rdp_ca.paa";
+tooltip = "11e Régiment de Dragons Portés";
+tooltipOwned = "11e Régiment de Dragons Portés";
+overview = "";
+author = "11RDP";
+overviewPicture = "logo_11rdp_ca.paa";

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="RDP">
+  <Package name="Main">
+    <Key ID="STR_RDP_Main_11RDP">
+        <English>11RDP</English>
+        <German>11RDP</German>
+        <Spanish>11RDP</Spanish>
+        <Polish>11RDP</Polish>
+        <Czech>11RDP</Czech>
+        <French>11RDP</French>
+        <Russian>11RDP</Russian>
+        <Portuguese>11RDP</Portuguese>
+        <Hungarian>11RDP</Hungarian>
+        <Italian>11RDP</Italian>
+        <Japanese>11RDP</Japanese>
+        <Korean>11RDP</Korean>
+    </Key>
+    <Key ID="STR_RDP_Main_URL">
+        <English>http://11rdp.fr/</English>
+        <German>http://11rdp.fr/</German>
+        <Polish>http://11rdp.fr/</Polish>
+        <Portuguese>http://11rdp.fr/</Portuguese>
+        <Russian>http://11rdp.fr/</Russian>
+        <Czech>http://11rdp.fr/</Czech>
+        <Spanish>http://11rdp.fr/</Spanish>
+        <Italian>http://11rdp.fr/</Italian>
+        <French>http://11rdp.fr/</French>
+        <Korean>http://11rdp.fr/</Korean>
+        <Japanese>http://11rdp.fr/</Japanese>
+    </Key>
+  </Package>
+</Project>
