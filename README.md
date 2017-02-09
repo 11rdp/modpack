@@ -12,8 +12,8 @@
     <a href="https://www.bistudio.com/community/licenses/arma-public-license">
         <img src="https://img.shields.io/badge/License-APL-red.svg?style=flat-square" alt="ACE Project Template License">
     </a>
-    <a href="https://travis-ci.org/acemod/arma-project-template">
-        <img src="https://img.shields.io/travis/acemod/arma-project-template.svg?style=flat-square&label=Build" alt="ACE Project Template Build Status">
+    <a href="https://travis-ci.org/11rdp/modpack">
+        <img src="https://img.shields.io/travis/11rdp/modpack.svg?style=flat-square&label=Build" alt="11RDP Modpack Build Status">
     </a>
 </p>
 
