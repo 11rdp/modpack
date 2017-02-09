@@ -36,7 +36,7 @@ Vous pouvez aider au développement en reportant les bugs que vous pourriez renc
 N'hésitez pas à installer la version de développement du pack et tester les nouvelles fonctionnalités afin de faire remonter un maximum de bugs.
 
 Si vous voulez aller encore plus loin, rien ne vous empêche de participer activement au développement : faites un simple fork du dépot et envoyez vos demandes de pull dès que vous jugez qu'elles sont prêtes à être intégrées. N'oubliez pas de vous créditer dans le fichier
-[`AUTHORS.txt`].
+[`AUTHORS.txt`](https://github.com/11rdp/modpack/blob/master/AUTHORS.txt).
 
 Reportez vous à la section suivante pour mettre en place votre environnement de travail.
 
@@ -48,8 +48,8 @@ Ceci fait, vous devriez déjà avoir toutes les dépendances et tous les outils 
 ```bat
 cd /d "D:\Mods\"
 git clone https://github.com/11rdp/modpack.git 11rdp
-cd 11rdp\
-python tools\setup.py
+cd "11rdp\"
+python "tools\setup.py"
 ```
 Si vous recevez un message d'erreur, assurez vous d'avoir intallé Git sur votre machine — rien ne vous empêchera, plus tard, de passer par des logiciels comme [GitKraken](https://www.gitkraken.com/) ou [SourceTree](https://www.sourcetreeapp.com/) si vraiment vous n'aimez pas la ligne de commande.
 - [Installer "Git for Windows"](https://git-scm.com/download/win)
