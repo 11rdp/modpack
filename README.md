@@ -3,17 +3,17 @@
 </p>
 
 <p align="center">
-    <a href="https://github.com/acemod/arma-project-template/releases/latest">
+    <a href="https://github.com/11rdp/modpack/releases/latest">
         <img src="https://img.shields.io/badge/Version-3.0.0-blue.svg?style=flat-square" alt="11RDP Version">
     </a>
     <a href="https://github.com/11rdp/modpack/issues">
-        <img src="https://img.shields.io/github/issues-raw/11rdp/modpack.svg?style=flat-square&label=Issues" alt="ACE Project Template Issues">
+        <img src="https://img.shields.io/github/issues-raw/11rdp/modpack.svg?style=flat-square&label=Issues" alt="11RDP Issues">
     </a>
     <a href="https://www.bistudio.com/community/licenses/arma-public-license">
-        <img src="https://img.shields.io/badge/License-APL-red.svg?style=flat-square" alt="ACE Project Template License">
+        <img src="https://img.shields.io/badge/License-APL-red.svg?style=flat-square" alt="11RDP License">
     </a>
     <a href="https://travis-ci.org/11rdp/modpack">
-        <img src="https://img.shields.io/travis/11rdp/modpack.svg?style=flat-square&label=Build" alt="11RDP Modpack Build Status">
+        <img src="https://img.shields.io/travis/11rdp/modpack.svg?style=flat-square&label=Build" alt="11RDP Build Status">
     </a>
 </p>
 
