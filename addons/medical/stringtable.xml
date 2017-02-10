@@ -14,6 +14,10 @@
       <French>Appareil rigide destiné à servir de tuteur à un membre fracturé.</French>
     </Key>
     <Key ID="STR_RDP_Medical_Actions_Splint">
+      <English>Splint</English>
+      <French>Attelle</French>
+    </Key>
+    <Key ID="STR_RDP_Medical_Apply_Splint">
       <English>Apply Splint</English>
       <French>Poser une attelle</French>
     </Key>
