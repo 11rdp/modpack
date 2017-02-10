@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project name="RDP">
+  <Package name="Medical">
+    <Key ID="STR_RDP_Medical_Splint_DisplayName">
+      <English>Splint</English>
+      <French>Attelle</French>
+    </Key>
+    <Key ID="STR_RDP_Medical_Splint_Desc_Short">
+      <English>Used to prevent motion of a fractured bone.</English>
+      <French>Utilisé pour immobiliser un membre fracturé.</French>
+    </Key>
+    <Key ID="STR_RDP_Medical_Splint_Desc_Use">
+      <English>A rigid device used to prevent motion of a joint or of the ends of a fractured bone.</English>
+      <French>Appareil rigide destiné à servir de tuteur à un membre fracturé.</French>
+    </Key>
+    <Key ID="STR_RDP_Medical_Actions_Splint">
+      <English>Apply Splint</English>
+      <French>Poser une attelle</French>
+    </Key>
+    <Key ID="STR_RDP_Medical_Applying_Splint">
+      <English>Applying Splint...</English>
+      <French>Mise en place de l'attelle...</French>
+    </Key>
+    <Key ID="STR_RDP_Medical_Activity_Splint">
+      <English>%1 applied a splint</English>
+      <French>%1 a posé une attelle</French>
+    </Key>
+  </Package>
+</Project>
