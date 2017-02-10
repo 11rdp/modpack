@@ -9,6 +9,7 @@ class CfgPatches {
         requiredAddons[] = {
             // ACE 3
             "ace_common",
+            "ace_medical",
             // CBA
             "cba_ui",
             "cba_xeh",

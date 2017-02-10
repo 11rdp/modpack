@@ -25,7 +25,7 @@
 Pour installer nos modules, téléchargez [la dernière version](https://github.com/11rdp/modpack/releases)
 et copiez le contenu de l'archive dans le répertoire d'installation d'Arma 3 :
 ```
-C:\Jeux\Steam\steamapps\commons\Arma 3\@Dragons
+C:\Jeux\Steam\steamapps\commons\Arma 3\@11rdp
 ```
 
 #### Contribuer

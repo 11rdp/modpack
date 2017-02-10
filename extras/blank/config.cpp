@@ -8,7 +8,7 @@ class CfgPatches {
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {"rdp_main"};
         author = ECSTRING(main,11RDP);
-        authors[] = {""};
+        authors[] = {"Yanek"};
         VERSION_CONFIG;
     };
 };
