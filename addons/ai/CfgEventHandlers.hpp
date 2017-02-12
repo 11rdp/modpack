@@ -16,6 +16,14 @@ class Extended_PostInit_EventHandlers {
     };
 };
 
+class Extended_InitPost_EventHandlers {
+    class CAManBase {
+        class ADDON {
+            serverInit = QUOTE(_this call FUNC(unit));
+        };
+    };
+};
+
 class Extended_FiredBIS_EventHandlers {
     class CAManBase {
         class ADDON {
