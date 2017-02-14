@@ -1,19 +1,16 @@
 #include "script_component.hpp"
 
-params ["_unit", "_weapon", "_muzzle"];
+params ["_unit", "_weapon", "_muzzle", "", "_ammo"];
 
-if (!hasInterface) exitWith {};
-if (_unit != ACE_player) exitWith {};
-if (diag_tickTime < GVAR(lastTick) + GVAR(SAFETY_DELAY)) exitWith {};
+TRACE_7("firedEH",_unit,_weapon,_muzzle,_mode,_ammo,_magazine,_projectile);
 
-TRACE_3("shot registered",_unit,_weapon,_muzzle);
+private _noiseAttenuation = [_unit, _weapon, _muzzle, _ammo] call FUNC(getNoiseAttenuation);
 
-private _noiseCoeff = [_unit, _weapon, _muzzle] call FUNC(getWeaponNoise);
-if (_noiseCoeff > 0) then {
-    // On détermine les factions qui correspondent aux ennemis.
+// Si l'atténuation du son atteint 1 (100%), pas la peine d'alerter les IA
+if (_noiseAttenuation < 1) then {
     private _enemySides = _unit call BIS_fnc_enemySides;
     private _nearEnemyGroups = [];
-    private _distance = (GVAR(HEARING_DISTANCE) - random 100) * _noiseCoeff;
+    private _distance = GVAR(HEARING_DISTANCE) - (GVAR(HEARING_DISTANCE) * _noiseAttenuation);
 
     private _nearEntities = (getPos _unit) nearEntities [GVAR(AFFECTED_CLASSES), _distance];
     {
@@ -21,13 +18,11 @@ if (_noiseCoeff > 0) then {
             _nearEnemyGroups pushBackUnique group _x;
         };
     } forEach _nearEntities;
-    TRACE_2("enemy groups",_distance,_nearEnemyGroups);
-
-    GVAR(lastTick) = diag_tickTime;
-    publicVariable QGVAR(lastTick);
 
     private _visibility = [_unit] call FUNC(getVisibility);
     {
         ["detected", [_unit, _x, _visibility]] call CBA_fnc_serverEvent;
     } forEach _nearEnemyGroups;
+
+    TRACE_4("",_noiseAttenuation,_visibility,_distance,_nearEnemyGroups);
 }

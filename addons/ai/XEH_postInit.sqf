@@ -3,7 +3,15 @@
 GVAR(lastTick) = diag_tickTime;
 GVAR(registeredSunlight) = sunOrMoon;
 
-["detected", {_this call FUNC(handleDetection)}] call CBA_fnc_addEventHandler;
+["ace_firedPlayer", {
+    if (diag_tickTime > GVAR(lastTick) + GVAR(SAFETY_DELAY)) then {
+        _this call FUNC(handleFired);
+        GVAR(lastTick) = diag_tickTime;
+        publicVariable QGVAR(lastTick);
+    };
+}] call CBA_fnc_addEventHandler;
+
+["detected", DFUNC(handleDetection)] call CBA_fnc_addEventHandler;
 
 if (isServer) then {
     [{

@@ -25,5 +25,4 @@ if (_visibility <= 0.38) then {
     _visibility = 0.38;
 };
 
-TRACE_1("",_visibility);
 _visibility
