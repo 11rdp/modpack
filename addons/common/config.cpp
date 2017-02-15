@@ -4,9 +4,9 @@ class CfgPatches {
     class ADDON {
         name = COMPONENT_NAME;
         units[] = {};
-        weapons[] = {"RDP_Splint"};
+        weapons[] = {};
         requiredVersion = REQUIRED_VERSION;
-        requiredAddons[] = {"rdp_common"};
+        requiredAddons[] = {"rdp_main"};
         author = ECSTRING(main,11RDP);
         authors[] = {"Yanek"};
         VERSION_CONFIG;
@@ -14,6 +14,6 @@ class CfgPatches {
 };
 
 #include "CfgEventHandlers.hpp"
-#include "CfgWeapons.hpp"
+#include "CfgModuleCategories.hpp"
+#include "CfgUnitInsignia.hpp"
 #include "CfgVehicles.hpp"
-#include "ACE_Medical_Treatments.hpp"

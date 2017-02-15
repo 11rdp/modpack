@@ -23,4 +23,3 @@ class CfgPatches {
 };
 
 #include "CfgEventHandlers.hpp"
-#include "CfgModuleCategories.hpp"

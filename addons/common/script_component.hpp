@@ -1,5 +1,5 @@
-#define COMPONENT ai
-#define COMPONENT_BEAUTIFIED AI
+#define COMPONENT common
+#define COMPONENT_BEAUTIFIED Common
 #include "\z\rdp\addons\main\script_mod.hpp"
 
 // #define DEBUG_MODE_FULL
@@ -7,12 +7,12 @@
 // #define CBA_DEBUG_SYNCHRONOUS
 // #define ENABLE_PERFORMANCE_COUNTERS
 
-#ifdef DEBUG_ENABLED_AI
+#ifdef DEBUG_ENABLED_COMMON
     #define DEBUG_MODE_FULL
 #endif
 
-#ifdef DEBUG_SETTINGS_AI
-    #define DEBUG_SETTINGS DEBUG_SETTINGS_AI
+#ifdef DEBUG_SETTINGS_COMMON
+    #define DEBUG_SETTINGS DEBUG_SETTINGS_COMMON
 #endif
 
 #include "\z\rdp\addons\main\script_macros.hpp"

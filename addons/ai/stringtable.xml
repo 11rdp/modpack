@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project name="RDP">
+  <Package name="AI">
+    <Key ID="STR_RDP_AI_Module_DisplayName">
+      <English>AI Units</English>
+      <French>Unités IA</French>
+    </Key>
+    <Key ID="STR_RDP_AI_Module_Description">
+      <English>Controls AI advanced behaviors, permits to activate or deactivate some features</English>
+      <French>Contrôle le comportement avancé des IA, permet d'activer ou de désactiver certaines fonctionnalités</French>
+    </Key>
+    <Key ID="STR_RDP_AI_EnableNvgRemoval_DisplayName">
+      <English>Remove NVGs by day</English>
+      <French>Retirer les JVN le jour</French>
+    </Key>
+    <Key ID="STR_RDP_AI_EnableNvgRemoval_Description">
+      <English>Automatically hides AI units' NVG when the light conditions are good enough</English>
+      <French>Cache automatiquement les JVN des unités IA lorsque la luminosité le justifie</French>
+    </Key>
+    <Key ID="STR_RDP_AI_EnableFlares_DisplayName">
+      <English>Allow AI to use flares</English>
+      <French>Permettre l'utilisation de flares</French>
+    </Key>
+    <Key ID="STR_RDP_AI_EnableFlares_Description">
+      <English>Allow AI to use flares automatically based on light conditions and guessed enemy position</English>
+      <French>Permet aux IA d'utiliser des flares automatiquement, en se basant sur les conditions lumineuses et la position supposée des ennemis</French>
+    </Key>
+  </Package>
+</Project>

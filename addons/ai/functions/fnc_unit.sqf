@@ -12,4 +12,6 @@ if (GETVAR(_unit,GVAR(NVGoggles),"") isEqualTo "") then {
     } forEach assignedItems _unit;
 };
 
-[_unit] call FUNC(hideNVG);
+if (GVAR(EnableNvgRemoval)) then {
+    [_unit] call FUNC(hideNVG);
+};

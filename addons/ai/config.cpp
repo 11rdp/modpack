@@ -6,7 +6,7 @@ class CfgPatches {
         units[] = {};
         weapons[] = {};
         requiredVersion = REQUIRED_VERSION;
-        requiredAddons[] = {"rdp_main"};
+        requiredAddons[] = {"rdp_common"};
         author = ECSTRING(main,11RDP);
         authors[] = {"Yanek"};
         VERSION_CONFIG;
@@ -14,4 +14,6 @@ class CfgPatches {
 };
 
 #include "CfgEventHandlers.hpp"
+#include "CfgVehicles.hpp"
 #include "CfgWeapons.hpp"
+#include "RDP_Settings.hpp"
