@@ -2,6 +2,9 @@
 
 params ["_unit", "_weapon", "_muzzle", "", "_ammo"];
 
+if !(local _unit) exitWith {false};
+if (CBA_missionTime < GVAR(lastValidShot) + 5) exitWith {false};
+
 TRACE_7("firedEH",_unit,_weapon,_muzzle,_mode,_ammo,_magazine,_projectile);
 
 private _noiseAttenuation = [_unit, _weapon, _muzzle, _ammo] call FUNC(getNoiseAttenuation);
@@ -10,19 +13,24 @@ private _noiseAttenuation = [_unit, _weapon, _muzzle, _ammo] call FUNC(getNoiseA
 if (_noiseAttenuation < 1) then {
     private _enemySides = _unit call BIS_fnc_enemySides;
     private _nearEnemyGroups = [];
-    private _distance = GVAR(HEARING_DISTANCE) - (GVAR(HEARING_DISTANCE) * _noiseAttenuation);
+    private _distance = GVAR(HearingDistance) - (GVAR(HearingDistance) * _noiseAttenuation);
 
-    private _nearEntities = (getPos _unit) nearEntities [GVAR(AFFECTED_CLASSES), _distance];
+    private _nearEntities = (getPos _unit) nearEntities [["Land", "Ship"], _distance];
     {
         if (side _x in _enemySides) then {
             _nearEnemyGroups pushBackUnique group _x;
         };
     } forEach _nearEntities;
 
-    private _visibility = [_unit] call FUNC(getVisibility);
-    {
-        ["detected", [_unit, _x, _visibility]] call CBA_fnc_serverEvent;
-    } forEach _nearEnemyGroups;
+    if !(_nearEnemyGroups isEqualTo []) then {
+        private _visibility = [_unit] call FUNC(getVisibility);
+        {
+            [QGVAR(detected), [_unit, _x, _visibility]] call CBA_fnc_serverEvent;
+        } count _nearEnemyGroups;
 
-    TRACE_4("",_noiseAttenuation,_visibility,_distance,_nearEnemyGroups);
-}
+        GVAR(lastValidShot) = CBA_missionTime;
+        publicVariable QGVAR(lastValidShot);
+    };
+
+    TRACE_4("shot fired",_noiseAttenuation,_visibility,_distance,_nearEnemyGroups);
+};

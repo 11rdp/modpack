@@ -16,4 +16,5 @@ class CfgPatches {
 #include "CfgEventHandlers.hpp"
 #include "CfgVehicles.hpp"
 #include "CfgWeapons.hpp"
+#include "RDP_AI_Abilities.hpp"
 #include "RDP_Settings.hpp"

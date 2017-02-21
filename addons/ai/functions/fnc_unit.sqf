@@ -2,16 +2,21 @@
 
 params ["_unit"];
 
-// On enregistre les NVG de l'unité, pour plus tard :
-if (GETVAR(_unit,GVAR(NVGoggles),"") isEqualTo "") then {
+if (!local _unit || isPlayer _unit) exitWith {false};
+
+// Enregistrement des NVG de l'unité, pour plus tard :
+private _nvg = _unit getVariable [QGVAR(NVGoggles), ""];
+if (_nvg == "") then {
     {
         if (getText (configFile >> "CfgWeapons" >> _x >> "simulation") == "NVGoggles") exitWith {
-            SETVAR(_unit,GVAR(NVGoggles),_x);
+            _unit setVariable [QGVAR(NVGoggles), _x];
         };
-        SETVAR(_unit,GVAR(NVGoggles),"NONE");
+        _unit setVariable [QGVAR(NVGoggles), "NONE"];
     } forEach assignedItems _unit;
 };
 
-if (GVAR(EnableNvgRemoval)) then {
-    [_unit] call FUNC(hideNVG);
-};
+_unit setSkill ["courage", 0];
+
+// Création d'un PFH pour gérer les situations de combat des unités IA
+// TODO: Se renseigner et envisager le FSM
+[FUNC(unitPFH), 1, _this] call CBA_fnc_addPerFrameHandler;

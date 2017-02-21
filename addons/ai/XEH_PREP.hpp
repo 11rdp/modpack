@@ -1,3 +1,9 @@
+PREP(ability);
+PREP(ability_chaseEnemy);
+PREP(ability_suppressiveFire);
+PREP(ability_throwFlare);
+PREP(ability_throwSmokeShell);
+PREP(checkExceptions);
 PREP(getNoiseAttenuation);
 PREP(getVisibility);
 PREP(handleDetection);
@@ -5,3 +11,4 @@ PREP(handleFired);
 PREP(hideNVG);
 PREP(moduleAI);
 PREP(unit);
+PREP(unitPFH);

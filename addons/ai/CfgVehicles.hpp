@@ -13,14 +13,12 @@ class CfgVehicles {
                 typeName = "BOOL";
                 defaultValue = 1;
             };
-            /*
             class EnableFlares {
                 displayName = CSTRING(EnableFlares_DisplayName);
                 description = CSTRING(EnableFlares_Description);
                 typeName = "BOOL";
                 defaultValue = 1;
             };
-            */
         };
         class ModuleDescription {
            description = CSTRING(Module_Description);

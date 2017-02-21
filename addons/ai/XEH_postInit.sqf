@@ -1,24 +1,10 @@
 #include "script_component.hpp"
 
-GVAR(lastTick) = diag_tickTime;
+GVAR(lastValidShot) = CBA_missionTime;
 GVAR(registeredSunlight) = sunOrMoon;
 
-["ace_firedPlayer", {
-    if (diag_tickTime > GVAR(lastTick) + GVAR(SAFETY_DELAY)) then {
-        _this call FUNC(handleFired);
-        GVAR(lastTick) = diag_tickTime;
-        publicVariable QGVAR(lastTick);
-    };
-}] call CBA_fnc_addEventHandler;
+["ace_firedPlayer", DFUNC(handleFired)] call CBA_fnc_addEventHandler;
+["ace_firedPlayerVehicle", DFUNC(handleFired)] call CBA_fnc_addEventHandler;
 
-["detected", DFUNC(handleDetection)] call CBA_fnc_addEventHandler;
-
-if (isServer) then {
-    [{
-        if (GVAR(registeredSunlight) != sunOrMoon) then {
-            {_x call FUNC(hideNVG)} forEach allUnits;
-            GVAR(registeredSunlight) = sunOrMoon;
-            publicVariable QGVAR(registeredSunlight);
-        }
-    }, 10, []] call CBA_fnc_addPerFrameHandler;
-};
+[QGVAR(detected), DFUNC(handleDetection)] call CBA_fnc_addEventHandler;
+[QGVAR(useAbility), DFUNC(ability)] call CBA_fnc_addEventHandler;

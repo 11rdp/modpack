@@ -13,4 +13,11 @@ class RDP_Settings {
         displayName = CSTRING(EnableFlares_DisplayName);
         description = CSTRING(EnableFlares_Description);
     };
+    class GVAR(HearingDistance) {
+        category = CSTRING(Module_DisplayName);
+        value = 600;
+        typeName = "SCALAR";
+        displayName = "";
+        description = "";
+    };
 };
