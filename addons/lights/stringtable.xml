@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="RDP">
+  <Package name="Lights">
+    <Key ID="STR_RDP_Lights_FlareWhite_Name">
+      <English>M583 White Star Parachute</English>
+      <French>M583 Fusée éclairante (blanche)</French>
+    </Key>
+    <Key ID="STR_RDP_Lights_FlareGreen_Name">
+      <English>M661 Green Star Parachute</English>
+      <French>M663 Fusée éclairante (verte)</French>
+    </Key>
+    <Key ID="STR_RDP_Lights_FlareRed_Name">
+      <English>M662 Red Star Parachute</English>
+      <French>M662 Fusée éclairante (rouge)</French>
+    </Key>
+    <Key ID="STR_RDP_Lights_FlareCIR_Name">
+      <English>M992 IR Star Parachute</English>
+      <French>M992 Fusée IR</French>
+    </Key>
+    <Key ID="STR_RDP_Lights_FlareWhite_NameShort">
+      <English>M583 White</English>
+      <French>M583 Blanche</French>
+    </Key>
+    <Key ID="STR_RDP_Lights_FlareGreen_NameShort">
+      <English>M661 Green</English>
+      <French>M661 Verte</French>
+    </Key>
+    <Key ID="STR_RDP_Lights_FlareRed_NameShort">
+      <English>M662 Red</English>
+      <French>M662 Rouge</French>
+    </Key>
+    <Key ID="STR_RDP_Lights_FlareCIR_NameShort">
+      <English>M992 IR</English>
+      <French>M992 IR</French>
+    </Key>
+    <Key ID="STR_RDP_Lights_3rFlareWhite_Name">
+      <English>3Rnd M583 White Star Parachute</English>
+      <French>3 M583 Fusée éclairante (blanche)</French>
+    </Key>
+    <Key ID="STR_RDP_Lights_3rFlareGreen_Name">
+      <English>3Rnd M661 Green Star Parachute</English>
+      <French>3 M663 Fusée éclairante (verte)</French>
+    </Key>
+    <Key ID="STR_RDP_Lights_3rFlareRed_Name">
+      <English>3Rnd M662 Red Star Parachute</English>
+      <French>3 M662 Fusée éclairante (rouge)</French>
+    </Key>
+    <Key ID="STR_RDP_Lights_3rFlareCIR_Name">
+      <English>3Rnd M992 IR Star Parachute</English>
+      <French>3 M992 Fusée IR</French>
+    </Key>
+  </Package>
+</Project>
