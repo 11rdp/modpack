@@ -19,6 +19,14 @@ class CfgMagazines {
     class UGL_FlareYellow_F: UGL_FlareWhite_F {
         scope = 1;
     };
+    class RDP_FlareCluster_Shell: UGL_FlareWhite_F {
+        author = ECSTRING(main,11RDP);
+        displayName = CSTRING(FlareCluster_Name);
+        displayNameShort = CSTRING(FlareCluster_NameShort);
+        ammo = "RDP_40mm_FlareCluster";
+        descriptionShort = "";
+        mass = 3;
+    };
 
     class 3Rnd_UGL_FlareWhite_F: UGL_FlareWhite_F {
         displayName = CSTRING(3rFlareWhite_Name);
