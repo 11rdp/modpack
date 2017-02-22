@@ -1,6 +1,6 @@
-#include "\z\rdp\addons\lights\script_component.hpp"
+#include "\z\rdp\addons\flares\script_component.hpp"
 #undef COMPONENT
-#define COMPONENT lights_sub
+#define COMPONENT flares_sub
 
 class CfgPatches {
     class ADDON {
@@ -8,7 +8,7 @@ class CfgPatches {
         units[] = {};
         weapons[] = {};
         requiredVersion = REQUIRED_VERSION;
-        requiredAddons[] = {"rdp_lights"};
+        requiredAddons[] = {"rdp_flares"};
         author = ECSTRING(main,11RDP);
         authors[] = {"Yanek"};
         VERSION_CONFIG;
