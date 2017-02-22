@@ -20,10 +20,10 @@ if (_grenadeLauncher != "") then {
         _unit addMagazine _fakeGrenade;
         _unit doTarget _target;
         _unit fire [_grenadeLauncher, "Single", _fakeGrenade];
-        private _spawn = [(getPos _target) select 0, (getPos _target) select 1, ((getPos _target) select 2) + 180];
+        private _spawn = [(getPos _target) select 0, (getPos _target) select 1, ((getPos _target) select 2) + 260];
         [{
-            private _flare = createvehicle ["F_40mm_White", (_this select 0), [], 50, "NONE"];
-            _flare setVelocity [0,0,-5];
+            private _flare = createvehicle ["F_40mm_White", (_this select 0), [], 100, "NONE"];
+            _flare setVelocity [0,0,-2]; // TODO: Prendre en compte le vent
             (_this select 1) removeMagazine (_this select 2);
         }, [_spawn,_unit,_fakeGrenade], 10] call CBA_fnc_waitAndExecute;
     };
