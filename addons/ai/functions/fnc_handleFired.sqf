@@ -7,13 +7,14 @@ if (CBA_missionTime < GVAR(lastValidShot) + 5) exitWith {false};
 
 TRACE_7("firedEH",_unit,_weapon,_muzzle,_mode,_ammo,_magazine,_projectile);
 
-private _noiseAttenuation = [_unit, _weapon, _muzzle, _ammo] call FUNC(getNoiseAttenuation);
+private _soundReductionsArray = [_unit, _weapon, _muzzle, _ammo] call FUNC(getWeaponSoundReduction);
+private _soundReduction = _soundReductionsArray select 0;
 
 // Si l'atténuation du son atteint 1 (100%), pas la peine d'alerter les IA
-if (_noiseAttenuation < 1) then {
+if (_soundReduction < 1) then {
     private _enemySides = _unit call BIS_fnc_enemySides;
     private _nearEnemyGroups = [];
-    private _distance = GVAR(HearingDistance) - (GVAR(HearingDistance) * _noiseAttenuation);
+    private _distance = GVAR(HearingDistance) - (GVAR(HearingDistance) * _soundReduction);
 
     private _nearEntities = (getPos _unit) nearEntities [["Land", "Ship"], _distance];
     {
@@ -33,7 +34,7 @@ if (_noiseAttenuation < 1) then {
     };
 
     #ifdef DEBUG_MODE_FULL
-        [format ["Sound propagation: %1 / %2m",_noiseAttenuation,_distance]] call ace_common_fnc_displayTextStructured;
-        TRACE_4("shot fired",_noiseAttenuation,_visibility,_distance,_nearEnemyGroups);
+        [format ["Sound propagation: %1 / %2m",_soundReduction,_distance]] call ace_common_fnc_displayTextStructured;
+        TRACE_4("shot fired",_soundReduction,_visibility,_distance,_nearEnemyGroups);
     #endif
 };
