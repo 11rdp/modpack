@@ -59,7 +59,7 @@ if sys.platform == "win32":
 
 ######## GLOBALS #########
 project = "@11rdp"
-project_version = "3.0.0"
+project_version = "3.0.0-rc1"
 arma3tools_path = ""
 work_drive = ""
 module_root = ""
