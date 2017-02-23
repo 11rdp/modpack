@@ -17,7 +17,7 @@ class CfgMagazines {
         displayNameShort = CSTRING(FlareCIR_NameShort);
     };
     class UGL_FlareYellow_F: UGL_FlareWhite_F {
-        scope = 1;
+        scope = PROTECTED;
     };
     class RDP_FlareCluster_Shell: UGL_FlareWhite_F {
         author = ECSTRING(main,11RDP);
@@ -41,6 +41,6 @@ class CfgMagazines {
         displayName = CSTRING(3rFlareCIR_Name);
     };
     class 3Rnd_UGL_FlareYellow_F: UGL_FlareYellow_F {
-        scope = 1;
+        scope = PROTECTED;
     };
 };
