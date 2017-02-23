@@ -5,7 +5,7 @@ class CfgAmmo {
         smokeColor[] = {1,1,0.7,0.5};
         lightColor[] = {0.5,0.5,0.4,0.5};
         typicalSpeed = 76;
-        intensity = 1500000;
+        intensity = 1000000;
     };
     class F_40mm_Cir: F_40mm_White {
         intensity = 10;
