@@ -38,4 +38,4 @@ if (_totalReduction > 1) then {
     _totalReduction = 1;
 };
 
-[_totalReduction, _projectileSoundReduction, _muzzleBlastSoundReduction, _environmentalSoundReduction];
+[_totalReduction, _projectileSoundReduction, _muzzleBlastSoundReduction, _environmentalSoundReduction]

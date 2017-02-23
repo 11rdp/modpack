@@ -10,4 +10,5 @@ private _distanceEffect = (_distance / _maxDistance) * 2.5;
 private _soundEffect = (_muzzleBlastSoundReduction + _environmentalSoundReduction) * 2;
 
 SUB(_precision,(_distanceEffect + _soundEffect));
+
 _precision

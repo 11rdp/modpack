@@ -22,7 +22,7 @@ class RDP_AI_Abilities {
     };
     class RDP_SuppressiveFire {
         callback = QUOTE(DFUNC(ability_suppressiveFire));
-        chances = 0.75
+        chances = 0.75;
         exceptions[] = {"notInVehicle", "hasTarget", "farFromTarget"};
         condition = "";
         cooldown = 60;

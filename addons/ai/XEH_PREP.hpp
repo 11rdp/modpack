@@ -1,7 +1,7 @@
-PREP(ability);
 PREP(ability_suppressiveFire);
 PREP(ability_throwFlare);
 PREP(ability_throwSmokeShell);
+PREP(ability);
 PREP(checkExceptions);
 PREP(getDetectionPrecision);
 PREP(getEnvironmentalSoundReduction);
