@@ -32,5 +32,8 @@ if (_noiseAttenuation < 1) then {
         publicVariable QGVAR(lastValidShot);
     };
 
-    TRACE_4("shot fired",_noiseAttenuation,_visibility,_distance,_nearEnemyGroups);
+    #ifdef DEBUG_MODE_FULL
+        [format ["Sound propagation: %1 / %2m",_noiseAttenuation,_distance]] call ace_common_fnc_displayTextStructured;
+        TRACE_4("shot fired",_noiseAttenuation,_visibility,_distance,_nearEnemyGroups);
+    #endif
 };
