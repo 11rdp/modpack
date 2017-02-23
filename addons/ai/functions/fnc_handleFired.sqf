@@ -25,8 +25,13 @@ if (_soundReduction < 1) then {
 
     if !(_nearEnemyGroups isEqualTo []) then {
         private _visibility = [_unit] call FUNC(getVisibility);
+
         {
-            [QGVAR(detected), [_unit, _x, _visibility]] call CBA_fnc_serverEvent;
+            private _soundTravelTime = [_unit, leader _x] call EFUNC(common,calculateSoundTravelTime);
+            [{
+                [QGVAR(detected), _this] call CBA_fnc_serverEvent;
+                systemChat str _this;
+            }, [_unit, _x, _visibility], _soundTravelTime] call CBA_fnc_waitAndExecute;
         } count _nearEnemyGroups;
 
         GVAR(lastValidShot) = CBA_missionTime;
