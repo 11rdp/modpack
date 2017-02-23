@@ -18,6 +18,10 @@ class CfgMagazines {
     };
     class UGL_FlareYellow_F: UGL_FlareWhite_F {
         scope = PROTECTED;
+        scopeCurator = PROTECTED;
+        scopeArsenal = PROTECTED;
+        displayName = "";
+        displayNameShort = "";
     };
     class RDP_FlareCluster_Shell: UGL_FlareWhite_F {
         author = ECSTRING(main,11RDP);
@@ -42,5 +46,9 @@ class CfgMagazines {
     };
     class 3Rnd_UGL_FlareYellow_F: UGL_FlareYellow_F {
         scope = PROTECTED;
+        scopeCurator = PROTECTED;
+        scopeArsenal = PROTECTED;
+        displayName = "";
+        displayNameShort = "";
     };
 };

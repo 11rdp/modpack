@@ -3,8 +3,10 @@ class CfgMagazines {
     class RDP_FakeGrenadeShell: 1Rnd_HE_Grenade_shell {
         author = ECSTRING(main,11RDP);
         scope = PROTECTED;
-        displayName = "Fake Grenade Shell";
-        displayNameShort = "Fake Grenade";
+        scopeCurator = PROTECTED;
+        scopeArsenal = PROTECTED;
+        displayName = "";
+        displayNameShort = "";
         ammo = "RDP_40mm_Fake";
         descriptionShort = "";
         mass = 0;
