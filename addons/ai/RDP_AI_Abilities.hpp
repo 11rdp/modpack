@@ -1,7 +1,7 @@
 class RDP_AI_Abilities {
     class RDP_ThrowFlare {
         callback = QUOTE(DFUNC(ability_throwFlare));
-        chances = 1;
+        chances = 0.5;
         exceptions[] = {"notInVehicle", "hasTarget"};
         condition = QUOTE(GVAR(EnableFlares));
         cooldown = 120;
