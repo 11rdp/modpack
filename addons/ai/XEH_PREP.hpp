@@ -4,6 +4,7 @@ PREP(ability_suppressiveFire);
 PREP(ability_throwFlare);
 PREP(ability_throwSmokeShell);
 PREP(checkExceptions);
+PREP(getDetectionPrecision);
 PREP(getEnvironmentalSoundReduction);
 PREP(getVisibility);
 PREP(getWeaponSoundReduction);

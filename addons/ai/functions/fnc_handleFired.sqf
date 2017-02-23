@@ -24,14 +24,14 @@ if (_soundReduction < 1) then {
     } forEach _nearEntities;
 
     if !(_nearEnemyGroups isEqualTo []) then {
-        private _visibility = [_unit] call FUNC(getVisibility);
-
+        //private _visibility = [_unit] call FUNC(getVisibility);
         {
             private _soundTravelTime = [_unit, leader _x] call EFUNC(common,calculateSoundTravelTime);
             [{
-                [QGVAR(detected), _this] call CBA_fnc_serverEvent;
-                systemChat str _this;
-            }, [_unit, _x, _visibility], _soundTravelTime] call CBA_fnc_waitAndExecute;
+                params ["_unit","_target","_distance","_soundReductionsArray"];
+                private _precision = [_unit,_target,_distance,_soundReductionsArray] call FUNC(getDetectionPrecision);
+                [QGVAR(detected), [_unit,_target,_precision]] call CBA_fnc_serverEvent;
+            }, [_unit,_x,_distance,_soundReductionsArray], _soundTravelTime] call CBA_fnc_waitAndExecute;
         } count _nearEnemyGroups;
 
         GVAR(lastValidShot) = CBA_missionTime;
