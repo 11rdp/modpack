@@ -24,7 +24,6 @@ if (_soundReduction < 1) then {
     } forEach _nearEntities;
 
     if !(_nearEnemyGroups isEqualTo []) then {
-        //private _visibility = [_unit] call FUNC(getVisibility);
         {
             private _soundTravelTime = [_unit, leader _x] call EFUNC(common,calculateSoundTravelTime);
             [{

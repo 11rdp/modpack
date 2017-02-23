@@ -1,5 +1,9 @@
 #include "\z\ace\addons\main\script_macros.hpp"
 
+#define PRIVATE 0
+#define PROTECTED 1
+#define PUBLIC 2
+
 #ifdef DEBUG_MODE_FULL
-    #define PING systemChat format ["PING! from:%1",__FILE__]
+    #define PING(var) systemChat format ["%1 (%2)",var,__FILE__]
 #endif

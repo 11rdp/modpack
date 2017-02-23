@@ -13,6 +13,4 @@ if (behaviour _leader != "CARELESS") then {
     if (_group knowsAbout _caller < _precision) then {
         _group reveal [_caller, _precision];
     };
-
-    //[QGVAR(useAbility), ["RDP_ChaseEnemy", _leader, _caller]] call CBA_fnc_serverEvent;
 };

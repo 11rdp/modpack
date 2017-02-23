@@ -12,7 +12,7 @@ private _condition = "(alive _caller)";
             _condition = _condition + " && (_target != objNull)";
         };
         case ("farFromTarget"): {
-            _condition = _condition + " && (_caller distance _target > RDP_ai_HearingDistance / 2)";
+            _condition = _condition + " && ((_caller distance _target) > 200)";
         };
     };
 } count _exceptions;
