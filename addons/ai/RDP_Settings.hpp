@@ -15,7 +15,7 @@ class RDP_Settings {
     };
     class GVAR(HearingDistance) {
         category = CSTRING(Module_DisplayName);
-        value = 600;
+        value = 2000;
         typeName = "SCALAR";
         displayName = "";
         description = "";

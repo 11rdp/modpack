@@ -1,3 +1,4 @@
+PREP(calculateSoundTravelTime);
 PREP(isOnCooldown);
 PREP(loadSettingsFromConfig);
 PREP(readSettingFromModule);
