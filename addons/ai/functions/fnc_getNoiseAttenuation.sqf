@@ -13,6 +13,16 @@ if (_weapon == _muzzle) then {
     ADD(_attenuation,_accessoryModifier);
 };
 
+// Gestion des projectiles sub/supersoniques
+private _bulletVelocity = getNumber (configFile >> "CfgAmmo" >> _ammo >> "typicalSpeed");
+private _whistle = (getNumber (configFile >> "CfgAmmo" >> _ammo >> "whistleDist") > 0);
+private _temperature = ((getPosASL _unit) select 2) call ace_weather_fnc_calculateTemperatureAtHeight;
+private _speedOfSound = _temperature call ace_weather_fnc_calculateSpeedOfSound;
+if (!_whistle && _bulletVelocity < _speedOfSound) then {
+    ADD(_attenuation,0.4);
+};
+TRACE_4("",_bulletVelocity,_whistle,_temperature,_speedOfSound);
+
 // Atténuation par les conditions atmosphériques
 private _overcastModifier = overcast / 10;
 private _rainModifier = rain / 10;

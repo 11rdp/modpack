@@ -3,7 +3,7 @@ class CfgWeapons {
     class ItemCore;
 
     class GrenadeLauncher: Default {
-        RDP_noiseAttenuation = 0.85;
+        RDP_noiseAttenuation = 0.5;
     };
     class Put: Default {
         RDP_noiseAttenuation = 1;
