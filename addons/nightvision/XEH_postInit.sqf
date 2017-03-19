@@ -9,7 +9,7 @@ GVAR(ppEffectNVGVignette) ppEffectCommit 0;
 
 GVAR(ppEffectColorCorrect) = ppEffectCreate ["ColorCorrections", 2122];
 GVAR(ppEffectColorCorrect) ppEffectForceInNVG true;
-GVAR(ppEffectColorCorrect) ppEffectAdjust [0.75, 0.85, 0, [0.0, 0.0, 0.0, 0.0], [1.3, 1.25, 0.0, 0.9], [6, 1, 1, 0.0]];
+GVAR(ppEffectColorCorrect) ppEffectAdjust [0.75, 0.85, 0, [0.0, 0.0, 0.0, 0.0], [1.3, 1.2, 0.0, 0.9], [6, 1, 1, 0.0]];
 GVAR(ppEffectColorCorrect) ppEffectCommit 0;
 
 GVAR(ppEffectGrainElectronicNoise) = ppEffectCreate ["FilmGrain", 2123];
