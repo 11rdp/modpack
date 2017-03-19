@@ -13,9 +13,9 @@ GVAR(ppEffectColorCorrect) ppEffectAdjust [0.75, 0.85, 0, [0.0, 0.0, 0.0, 0.0], 
 GVAR(ppEffectColorCorrect) ppEffectCommit 0;
 
 GVAR(ppEffectGrainElectronicNoise) = ppEffectCreate ["FilmGrain", 2123];
-GVAR(ppEffectGrainElectronicNoise) ppEffectAdjust [0.3, 1, 1, 0.3, 0.3];
-GVAR(ppEffectGrainElectronicNoise) ppEffectCommit 0;
 GVAR(ppEffectGrainElectronicNoise) ppEffectForceInNVG true;
+GVAR(ppEffectGrainElectronicNoise) ppEffectAdjust [0.4, 1, 1, 0.3, 0.3];
+GVAR(ppEffectGrainElectronicNoise) ppEffectCommit 0;
 
 ["loadout", FUNC(updatePPEffects)] call CBA_fnc_addPlayerEventHandler;
 ["visionMode", FUNC(updatePPEffects)] call CBA_fnc_addPlayerEventHandler;
