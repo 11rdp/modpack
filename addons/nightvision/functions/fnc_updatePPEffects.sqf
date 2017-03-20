@@ -19,7 +19,7 @@ GVAR(ppEffectColorCorrect) ppEffectEnable true;
 GVAR(ppEffectGrainElectronicNoise) ppEffectEnable true;
 
 if (_visionMode isEqualTo 1) then {
-    _sound = selectRandom [
+    private _sound = selectRandom [
         QUOTE(PATHTO_R(sounds\nvg_1.ogg)),
         QUOTE(PATHTO_R(sounds\nvg_2.ogg))
     ];
