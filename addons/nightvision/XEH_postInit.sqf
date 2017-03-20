@@ -14,7 +14,7 @@ GVAR(ppEffectColorCorrect) ppEffectCommit 0;
 
 GVAR(ppEffectGrainElectronicNoise) = ppEffectCreate ["FilmGrain", 2123];
 GVAR(ppEffectGrainElectronicNoise) ppEffectForceInNVG true;
-GVAR(ppEffectGrainElectronicNoise) ppEffectAdjust [0.4, 1, 1, 0.3, 0.3];
+GVAR(ppEffectGrainElectronicNoise) ppEffectAdjust [1, 4, 4, 0.3, 0.3];
 GVAR(ppEffectGrainElectronicNoise) ppEffectCommit 0;
 
 ["loadout", FUNC(updatePPEffects)] call CBA_fnc_addPlayerEventHandler;
@@ -22,3 +22,5 @@ GVAR(ppEffectGrainElectronicNoise) ppEffectCommit 0;
 ["cameraView", FUNC(updatePPEffects)] call CBA_fnc_addPlayerEventHandler;
 ["vehicle", FUNC(updatePPEffects)] call CBA_fnc_addPlayerEventHandler;
 ["turret", FUNC(updatePPEffects)] call CBA_fnc_addPlayerEventHandler;
+
+[QGVAR(sfx), DEFUNC(common,playSoundFX)] call CBA_fnc_addEventHandler;
