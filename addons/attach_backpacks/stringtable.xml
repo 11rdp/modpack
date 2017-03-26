@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project name="RDP">
-  <Package name="Backpack_on_Chest">
-    <Key ID="STR_RDP_Backpack_on_Chest_Attach">
+  <Package name="Attach_Backpacks">
+    <Key ID="STR_RDP_Attach_Backpacks_Attach">
       <English>Backpack on chest</English>
       <French>Sac sur le ventre</French>
     </Key>
-    <Key ID="STR_RDP_Backpack_on_Chest_Detach">
+    <Key ID="STR_RDP_Attach_Backpacks_Detach">
       <English>Backpack on back</English>
       <French>Sac sur le dos</French>
     </Key>
