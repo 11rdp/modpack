@@ -10,11 +10,9 @@ _caller addBackpack _backpack;
 clearAllItemsFromBackpack _caller;
 {_caller addItemToBackpack _x} count _backpackItems;
 
-clearBackpackCargoGlobal _backpackHolder;
-detach _backpackHolder;
-deleteVehicle _backpackHolder;
+[_backpackHolder] call FUNC(destroyBackpackHolder);
 _caller forceWalk false;
 
-_caller setVariable [QGVAR(attachedBackpack),""];
-_caller setVariable [QGVAR(attachedBackpackContent),[]];
-_caller setVariable [QGVAR(attachedBackpackHolder),objNull];
+_caller setVariable [QGVAR(attachedBackpack), "", true];
+_caller setVariable [QGVAR(attachedBackpackContent), [], true];
+_caller setVariable [QGVAR(attachedBackpackHolder), objNull, true];
