@@ -16,6 +16,7 @@ class CfgVehicles {
     class ACE_medicalSupplyCrate_advanced: ACE_medicalSupplyCrate {
         class TransportItems: TransportItems {
             MACRO_ADDITEM(RDP_Splint,15);
+            MACRO_ADDITEM(RDP_Painkillers,50);
         };
     };
 };

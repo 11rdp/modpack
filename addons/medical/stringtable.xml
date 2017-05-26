@@ -29,5 +29,34 @@
       <English>%1 applied a splint</English>
       <French>%1 a posé une attelle</French>
     </Key>
+
+    <Key ID="STR_RDP_Medical_Painkillers_DisplayName">
+      <English>Painkillers</English>
+      <French>Analgésiques</French>
+    </Key>
+    <Key ID="STR_RDP_Medical_Painkillers_Desc_Short">
+      <English>Used to prevent pain</English>
+      <French>Utilisé pour prévenir la douleur</French>
+    </Key>
+    <Key ID="STR_RDP_Medical_Painkillers_Desc_Use">
+      <English>Ibuprofen pills (800mg) used in the treatment of pain</English>
+      <French>Comprimés d’ibuprofène (800mg) destinés à soulager la douleur</French>
+    </Key>
+    <Key ID="STR_RDP_Medical_Actions_Painkillers">
+      <English>Painkillers</English>
+      <French>Analgésiques</French>
+    </Key>
+    <Key ID="STR_RDP_Medical_Use_Painkillers">
+      <English>Painkillers</English>
+      <French>Analgésiques</French>
+    </Key>
+    <Key ID="STR_RDP_Medical_Using_Painkillers">
+      <English>Painkillers...</English>
+      <French>Analgésiques...</French>
+    </Key>
+    <Key ID="STR_RDP_Medical_Activity_Painkillers">
+      <English>%1 used painkillers</English>
+      <French>%1 a utilisé des analgésiques</French>
+    </Key>
   </Package>
 </Project>

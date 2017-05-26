@@ -13,4 +13,16 @@ class CfgWeapons {
             mass = 1;
         };
     };
+
+    class RDP_Painkillers: ACE_ItemCore {
+        scope = 2;
+        displayName = CSTRING(Painkillers_DisplayName);
+        picture = QPATHTOF(ui\items\painkillers_x_ca.paa);
+        model = "\A3\weapons_F\ammo\mag_univ.p3d";
+        descriptionShort = CSTRING(Painkillers_Desc_Short);
+        descriptionUse = CSTRING(Painkiller_Desc_Use);
+        class ItemInfo: InventoryItem_Base_F {
+            mass = 0.05;
+        };
+    };
 };

@@ -1,4 +1,14 @@
 class Medical {
+    class ACE_Head {
+        class FieldDressing;
+        class RDP_Painkillers: FieldDressing {
+            displayName = CSTRING(Actions_Painkillers);
+            condition = QUOTE([ARR_4(_player,_target,'head','RDP_Painkillers')] call ace_medical_fnc_canTreatCached);
+            statement = QUOTE([ARR_4(_player,_target,'head','RDP_Painkillers')] call DFUNC(treatment));
+            icon = QPATHTOF(UI\icons\painkillers_ca.paa);
+        };
+    };
+
     class ACE_ArmLeft {
         class FieldDressing;
         class RDP_Splint: FieldDressing {

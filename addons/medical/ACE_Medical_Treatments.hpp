@@ -11,5 +11,16 @@ class ACE_Medical_Actions {
             condition = "";
             litter[] = {};
         };
+        class RDP_Painkillers: FieldDressing {
+            displayName = CSTRING(Use_Painkillers);
+            displayNameProgress = CSTRING(Using_Painkillers);
+            allowedSelections[] = {"head"};
+            category = "medication";
+            items[] = {"RDP_Painkillers"};
+            treatmentTime = 1;
+            callbackSuccess = "";
+            condition = "";
+            litter[] = {};
+        };
     };
 };
