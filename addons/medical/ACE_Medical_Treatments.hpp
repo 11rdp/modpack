@@ -17,10 +17,24 @@ class ACE_Medical_Actions {
             allowedSelections[] = {"head"};
             category = "medication";
             items[] = {"RDP_Painkillers"};
-            treatmentTime = 1;
-            callbackSuccess = "";
-            condition = "";
+            treatmentTime = 2;
+            callbackSuccess = QUOTE(ace_medical_fnc_treatmentAdvanced_medication);
+            condition = "[(_this select 1)] call ace_common_fnc_isAwake";
             litter[] = {};
+        };
+    };
+};
+
+class ACE_Medical_Advanced {
+    class Treatment {
+        class Medication {
+            class RDP_Painkillers {
+                painReduce = 0.7;
+                timeInSystem = 120;
+                maxDose = 10;
+                inCompatableMedication[] = {};
+                viscosityChange = 5;
+            };
         };
     };
 };
