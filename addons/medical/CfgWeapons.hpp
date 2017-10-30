@@ -1,6 +1,6 @@
 class CfgWeapons {
     class ACE_ItemCore;
-    class InventoryItem_Base_F;
+    class CBA_MiscItem_ItemInfo;
     
     class RDP_Splint: ACE_ItemCore {
         scope = 2;
@@ -9,7 +9,7 @@ class CfgWeapons {
         model = "\z\ace\addons\medical\data\tourniquet.p3d";
         descriptionShort = CSTRING(Splint_Desc_Short);
         descriptionUse = CSTRING(Splint_Desc_Use);
-        class ItemInfo: InventoryItem_Base_F {
+        class ItemInfo: CBA_MiscItem_ItemInfo {
             mass = 1;
         };
     };
